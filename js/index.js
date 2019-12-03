@@ -41,12 +41,16 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+
   const headerimg = document.getElementById("cta-img") 
     headerimg.setAttribute('src', siteContent["cta"]["img-src"]);
 
   const midimg = document.getElementById("middle-img");
     midimg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+
+    //nav
   const navLinks = document.querySelectorAll("a");
     navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
     navLinks[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -55,12 +59,14 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
     navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
     navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
   const ctaheader = document.querySelector("h1");
     ctaheader.textContent = "DOM \r\n Is \r\n Awesome";
     ctaheader.setAttribute('style', 'white-space: pre;');
 
   const ctabutton = document.querySelector("button");
     ctabutton.textContent = siteContent["cta"]["button"];
+
 
 const contentHeader = document.querySelectorAll("h4");
 contentHeader[0].textContent = siteContent["main-content"]["features-h4"];
@@ -76,6 +82,7 @@ contentP[2].textContent = siteContent["main-content"]["services-content"];
 contentP[3].textContent = siteContent["main-content"]["product-content"];
 contentP[4].textContent = siteContent["main-content"]["vision-content"];
 
+//contact
 const contactHeader = document.querySelectorAll("h4");
   contactHeader[5].textContent = siteContent["contact"]["contact-h4"];
 
@@ -85,6 +92,7 @@ const contacttxt = document.querySelectorAll("p");
   contacttxt[6].textContent = siteContent["contact"]["phone"];
   contacttxt[7].textContent = siteContent["contact"]["email"];
 
+  //footer
   const footertxt = document.querySelector("footer p");
     footertxt.textContent = siteContent["footer"]["copyright"];
 
@@ -101,6 +109,8 @@ const newStart = document.createElement("a");
 newStart.textContent = "Start";
 nav.prepend(newStart);
 
+
+//stretch
 navLinks.forEach(function(currentVal){
   currentVal.style.color = "cyan";
 });
