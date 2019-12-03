@@ -111,17 +111,21 @@ nav.prepend(newStart);
 
 
 //stretch
+
+document.querySelector(".container").style.backgroundColor = "green";
+
 navLinks.forEach(function(currentVal){
-  currentVal.style.color = "cyan";
+  currentVal.style.backgroundColor = "red";
+  currentVal.style.color = "blue";
 });
 
-newBegin.style.color = "cyan";
+newBegin.style.color = "red";
 newBegin.style.cursor = "pointer";
-newEnd.style.color = "cyan";
+newEnd.style.color = "red";
 newEnd.style.cursor = "pointer";
 
 contentHeader.forEach(function(currentVal){
-  currentVal.style.color = "cyan";
+  currentVal.style.color = "red";
 });
 
-ctabutton.style.backgroundColor = "cyan";
+ctabutton.style.backgroundColor = "red";
